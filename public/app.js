@@ -2,6 +2,6 @@
 
 angular.module('seedApp', [
   'ngResource',
-  'ngRoute',
+//  'ngRoute',
   'ui.router'
 ]);
