@@ -25,14 +25,20 @@
 		<script src="./public/controllers/home.js"></script>
 		<script src="./public/controllers/contact.js"></script>
 		<script src="./public/controllers/demo/persons.js"></script>
+		<script src="./public/controllers/tablero-controller.js"></script>
+		<script src="./public/controllers/versiculo.js"></script>
 
 	</head>
 
 	<body>
 
-		<div ng-app="seedApp">
+		<div class="">
 
-			<div ui-view>
+			<div ng-app="seedApp">
+
+				<div ui-view>
+				</div>
+
 			</div>
 
 		</div>

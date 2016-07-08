@@ -1,8 +1,10 @@
 'use strict';
 
 angular.module('seedApp')
-.config(['$stateProvider',
-  function($stateProvider) {
+.config(['$stateProvider', '$urlRouterProvider',
+  function($stateProvider, $urlRouterProvider) {
+//.config(['$stateProvider',
+//  function($stateProvider) 
 
     var path = './public/views/persons';
 
