@@ -13,18 +13,6 @@ angular.module('seedApp')
       controller: 'MainController'
     });
 
-    $stateProvider.state('home.tablero', {
-      url: 'tablero',
-      templateUrl: path + '/tablero/index.html',
-      controller: 'TableroController'
-    });
-
-    $stateProvider.state('home.versiculo', {
-      url: 'versiculo',
-      templateUrl: path + '/versiculo/index.html',
-      controller: 'VersiculoController'
-    });
-
     $urlRouterProvider.otherwise("/tablero");
   }
 ]);

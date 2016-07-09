@@ -18,6 +18,7 @@
 		<script src="./public/routes/home.js"></script>
 		<script src="./public/routes/public.js"></script>
 		<script src="./public/routes/demo.js"></script>
+		<script src="./public/routes/tablero.js"></script>
 
 		<script src="./public/services/persons.js"></script>
 

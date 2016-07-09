@@ -21,43 +21,43 @@ angular.module('seedApp')
     });
 
     $stateProvider.state('home.versiculo.dom', {
-      url: 'dom',
+      url: '/domingo',
       templateUrl: path + '/versiculo/dom.html',
       controller: 'VersiculoController'
     });
 
     $stateProvider.state('home.versiculo.lun', {
-      url: 'lun',
+      url: '/lunes',
       templateUrl: path + '/versiculo/lun.html',
       controller: 'VersiculoController'
     });
 
     $stateProvider.state('home.versiculo.mar', {
-      url: 'mar',
+      url: '/martes',
       templateUrl: path + '/versiculo/mar.html',
       controller: 'VersiculoController'
     });
 
     $stateProvider.state('home.versiculo.mie', {
-      url: 'mie',
+      url: '/miercoles',
       templateUrl: path + '/versiculo/mie.html',
       controller: 'VersiculoController'
     });
 
     $stateProvider.state('home.versiculo.jue', {
-      url: 'jue',
+      url: '/jueves',
       templateUrl: path + '/versiculo/jue.html',
       controller: 'VersiculoController'
     });
 
     $stateProvider.state('home.versiculo.vie', {
-      url: 'vie',
+      url: '/viernes',
       templateUrl: path + '/versiculo/vie.html',
       controller: 'VersiculoController'
     });
 
     $stateProvider.state('home.versiculo.sab', {
-      url: 'sab',
+      url: '/sabado',
       templateUrl: path + '/versiculo/sab.html',
       controller: 'VersiculoController'
     });

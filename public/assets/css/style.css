@@ -1,7 +1,4 @@
-body {
-  min-height: 800px;
-  padding-top: 70px;
-}
+
 .dropdown:hover .dropdown-menu {
     display: block;
  }
