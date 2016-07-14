@@ -1,8 +1,6 @@
 
 <div class="col-md-12 text-center">
-  <h1>
-    Mi matutina -> tercer trimestre - 2016
-  </h1>
+  <h3>Mi matutina -> tercer trimestre - 2016</h3>
 </div>
 <div class="col-md-12">
   <div class="row">
@@ -16,12 +14,10 @@
     <div id="capa2"></div>
 
     <div class="col-md-12 text-center">
-      <di ng-repeat="dia in vardias" class="weekdays">
-        <a class="btn btn-success" role="button" href="{{dia.ref}}">
-          {{dia.day}}
-        </a>
+      <div class="weekdays">
+        <a ng-repeat="dia in vardias" class="btn btn-success" role="button" href="{{dia.ref}}">{{dia.day}}</a>
       </div>
-
+      <!--
       <table class="table table-bordered">
         <tr class="success">
           <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.dom" role="button">DOMINGO</a></td>
@@ -33,6 +29,7 @@
           <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.sab" role="button">SABADO</a></td>
         </tr>
       </table>
+      -->
     </div>
   </div>
 </div>
@@ -64,39 +61,39 @@
 
   <table class="table table-bordered text-center">
     <tr class="success">
-      <td class="info"><h1>1</h1></td>
-      <td class="active"><h1>2</h1></td>
-      <td class="success"><h1>3</h1></td>
-      <td class="success"><h1>4</h1></td>
-      <td class="success"><h1>5</h1></td>
+      <td class="success"><p>1</p></td>
+      <td class="success"><p>2</p></td>
+      <td class="success"><p>3</p></td>
+      <td class="success"><p>4</p></td>
+      <td class="success"><p>5</p></td>
     </tr>
     <tr class="success">
-      <td class="info"><h1>6</h1></td>
-      <td class="active"><h1>7</h1></td>
-      <td class="success"><h1>8</h1></td>
-      <td class="success"><h1>9</h1></td>
-      <td class="success"><h1>10</h1></td>
+      <td class="success"><p>6</p></td>
+      <td class="success"><p>7</p></td>
+      <td class="success"><p>8</p></td>
+      <td class="success"><p>9</p></td>
+      <td class="success"><p>10</p></td>
     </tr>
     <tr class="success">
-      <td class="info"><h1>11</h1></td>
-      <td class="active"><h1>12</h1></td>
-      <td class="success"><h1>13</h1></td>
-      <td class="success"><h1>14</h1></td>
-      <td class="success"><h1>15</h1></td>
+      <td class="success"><p>11</p></td>
+      <td class="success"><p>12</p></td>
+      <td class="success"><p>13</p></td>
+      <td class="success"><p>14</p></td>
+      <td class="success"><p>15</p></td>
     </tr>
     <tr class="success">
-      <td class="info"><h1>16</h1></td>
-      <td class="active"><h1>17</h1></td>
-      <td class="success"><h1>18</h1></td>
-      <td class="success"><h1>19</h1></td>
-      <td class="success"><h1>20</h1></td>
+      <td class="success"><p>16</p></td>
+      <td class="success"><p>17</p></td>
+      <td class="success"><p>18</p></td>
+      <td class="success"><p>19</p></td>
+      <td class="success"><p>20</p></td>
     </tr>
   </table>
 </div>
 <div class="col-md-2">
   <table class="table table-bordered">
     <tr class="success">
-      <td class="info"><h1>Other component</h1></td>
+      <td class="info"><h1>Other compo nents</h1></td>
     </tr>
   </table>
 </div>

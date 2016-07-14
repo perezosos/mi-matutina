@@ -13,6 +13,6 @@ angular.module('seedApp')
       controller: 'MainController'
     });
 
-    $urlRouterProvider.otherwise("/tablero");
+    $urlRouterProvider.otherwise("/");
   }
 ]);

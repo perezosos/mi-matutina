@@ -25,3 +25,54 @@
   width: 90%;
   height: 60px;
 }
+/*
+.container div .row {
+  background: black;
+}
+*/
+
+.footer {
+  position: relative;
+  top: 4px;
+}
+.footer a {
+  margin: 3px;
+  background: green;
+}
+.row a {
+  /**/
+  width: 12%;
+  margin: 2px;
+}
+.vers p {
+  font-size: 70px;
+}
+.superBack {
+  position: absolute;
+  background: black;
+  height: 50px;
+  width: 100%;
+}
+.superFront {
+  position: absolute;
+  background: green;
+  height: 30px;
+  width: 93.849%;
+  top: 10px;
+  opacity: 0.4;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 3.0755%;
+  margin-right: 3.0755%;
+}
+
+/*
+.container {
+  background: black;
+}
+.footer {
+  background: lightgreen;
+}
+.footer a {
+  background: red;
+}*/

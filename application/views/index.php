@@ -30,21 +30,41 @@
 		<script src="./public/controllers/versiculo.js"></script>
 		<script src="./public/controllers/week-controller.js"></script>
 
+		<style>
+			/*
+			background-image: url("img_tree.png");
+			background-repeat: no-repeat;
+			background-position: right top;
+			margin-right: 200px;
+			background-attachment: fixed;
+	 		*/
+			body {
+				background-color: #D5FCC6;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+		</style>
 	</head>
 
 	<body>
 
 		<div class="">
-
 			<div ng-app="seedApp">
+
+				<div class="superBack">
+					<br><br>
+				</div>
+				<div class="superFront">
+				</div>
+				<div class="text-center footer">
+					<a class="btn btn-success" role="button" ui-sref="home.tablero">->Go to table page>></a>
+				</div>
 
 				<div ui-view>
 				</div>
 
 			</div>
-
 		</div>
 
 	</body>
-
 </html>
