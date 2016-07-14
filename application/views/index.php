@@ -28,6 +28,7 @@
 		<script src="./public/controllers/demo/persons.js"></script>
 		<script src="./public/controllers/tablero-controller.js"></script>
 		<script src="./public/controllers/versiculo.js"></script>
+		<script src="./public/controllers/week-controller.js"></script>
 
 	</head>
 

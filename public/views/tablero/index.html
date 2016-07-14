@@ -12,7 +12,16 @@
   </div>
 
   <div class="row">
+
+    <div id="capa2"></div>
+
     <div class="col-md-12 text-center">
+      <di ng-repeat="dia in vardias" class="weekdays">
+        <a class="btn btn-success" role="button" href="{{dia.ref}}">
+          {{dia.day}}
+        </a>
+      </div>
+
       <table class="table table-bordered">
         <tr class="success">
           <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.dom" role="button">DOMINGO</a></td>
@@ -33,10 +42,25 @@
     <tr class="success">
       <td class="info"><h1>Other module</h1></td>
     </tr>
+    <tr>
+      <div>
+        <form>
+          <!--<input id="texto" type="text">
+          <input type="button" value="Generar nro al" onclick="aleatorio(getElementById('texto').value);">
+          <input type="button" value="Generar" ng-click="generarNroRandom();">
+          <input type="button" value="Generar dias semana" ng-click="generarDias();">-->
+          <!--<input type="button" value="Generar dias tabla" ng-click="genera_dias_semana();">-->
+        </form>
+
+        <div id="capa"></div>
+      </div>
+    </tr>
   </table>
 </div>
 
 <div class="col-md-8">
+
+  <div id="tablero" class="text-center"></div>
 
   <table class="table table-bordered text-center">
     <tr class="success">

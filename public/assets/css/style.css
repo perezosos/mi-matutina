@@ -2,15 +2,26 @@
 .dropdown:hover .dropdown-menu {
     display: block;
  }
- .thumbnail{
+.thumbnail{
     width: 200px;
     height: 300px;
     overflow: auto;
 }
 
 .thumbnail img{
-width: 150px;
+    width: 150px;
     height: 120px;
 }
 .center{
     text-align: center;
+}
+
+.botoncito {
+  float: left;
+  height: auto;
+  width: 14.28571428571429%;
+}
+.botoncito a {
+  width: 90%;
+  height: 60px;
+}

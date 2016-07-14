@@ -11,7 +11,8 @@ angular.module('seedApp')
     $stateProvider.state('home.tablero', {
       url: 'tablero',
       templateUrl: path + '/tablero/index.html',
-      controller: 'TableroController'
+      controller: 'TableroController',
+      controller: 'WeekController'
     });
 
     $stateProvider.state('home.versiculo', {
