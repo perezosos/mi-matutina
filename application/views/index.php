@@ -19,6 +19,7 @@
 		<script src="./public/routes/public.js"></script>
 		<script src="./public/routes/demo.js"></script>
 		<script src="./public/routes/tablero.js"></script>
+		<script src="./public/routes/config.js"></script>
 
 		<script src="./public/services/persons.js"></script>
 
@@ -27,8 +28,9 @@
 		<script src="./public/controllers/contact.js"></script>
 		<script src="./public/controllers/demo/persons.js"></script>
 		<script src="./public/controllers/tablero-controller.js"></script>
-		<script src="./public/controllers/versiculo.js"></script>
+		<script src="./public/controllers/versiculo-controller.js"></script>
 		<script src="./public/controllers/week-controller.js"></script>
+		<script src="./public/controllers/config-controller.js"></script>
 
 		<style>
 			/*
@@ -57,7 +59,8 @@
 				<div class="superFront">
 				</div>
 				<div class="text-center footer">
-					<a class="btn btn-success" role="button" ui-sref="home.tablero">->Go to table page>></a>
+					<a class="btn btn-success" role="button" ui-sref="home.tablero">Go to Tablero</a>
+					<a class="btn btn-danger" role="button" ui-sref="home.config">Conf.*</a>
 				</div>
 
 				<div ui-view>

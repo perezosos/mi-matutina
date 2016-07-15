@@ -37,12 +37,29 @@
 }
 .footer a {
   margin: 3px;
+}
+.footer .btn-success{
   background: green;
 }
+.footer .btn-danger{
+  background: black;
+  border-color: #628259;
+}
+
 .row a {
   /**/
   width: 12%;
   margin: 2px;
+}
+.row #tablero h1 {
+  /**/
+  font-size: 90px;
+  color: #036920;
+  text-decoration: underline;
+  font-style: italic;
+}
+.weekdays a {
+  font-size: 20px;
 }
 .vers p {
   font-size: 70px;

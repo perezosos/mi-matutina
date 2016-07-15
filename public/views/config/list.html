@@ -1,0 +1,19 @@
+<div>
+  <h2>Lista de dias</h2>
+</div>
+<div class="table">
+  <div class="tr col-md-12">
+    <div class="td col-md-2">Dia</div>
+    <div class="td col-md-3">Url reference</div>
+  </div>
+  <div class="tr col-md-12" ng-repeat="weekd in varweekd">
+    <div class="td col-md-2">
+      {{weekd.day}}
+    </div>
+    <div class="td col-md-3">
+      {{weekd.ref}}
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-info" ui-sref="home.config">Volver</button>
+</div>

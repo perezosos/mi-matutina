@@ -112,7 +112,7 @@ angular.module('seedApp')
     };
   }
 ]);
-
+/*
 function aleatorio(texto) {
   var numPosibilidades = 5;
  	var aleat = Math.random() * numPosibilidades;
@@ -124,3 +124,4 @@ function aleatorio(texto) {
   h1.innerHTML = aleat + texto;
   capa.appendChild(h1);
 }
+*/

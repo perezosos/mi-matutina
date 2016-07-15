@@ -1,11 +1,13 @@
+<div ui-view>
 
 <div class="col-md-12 text-center">
   <h3>Mi matutina -> tercer trimestre - 2016</h3>
 </div>
+
 <div class="col-md-12">
   <div class="row">
-    <div class="col-md-12 text-center">
-      <h1>EL TABLERO</h1>
+    <div id="tablero" class="col-md-12 text-center">
+      <h1>TABLERO</h1>
     </div>
   </div>
 
@@ -15,7 +17,7 @@
 
     <div class="col-md-12 text-center">
       <div class="weekdays">
-        <a ng-repeat="dia in vardias" class="btn btn-success" role="button" href="{{dia.ref}}">{{dia.day}}</a>
+        <a ng-repeat="weekd in varweekd" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>
       </div>
       <!--
       <table class="table table-bordered">
@@ -93,7 +95,9 @@
 <div class="col-md-2">
   <table class="table table-bordered">
     <tr class="success">
-      <td class="info"><h1>Other compo nents</h1></td>
+      <td class="info"><h1>Other compo- nents</h1></td>
     </tr>
   </table>
+</div>
+
 </div>

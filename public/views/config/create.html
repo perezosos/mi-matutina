@@ -1,0 +1,21 @@
+
+<div class="col-md-12 text-center">
+  <h3>Crear día de la semana</h3>
+</div>
+<div class="col-md-12">
+  <form>
+
+    <div class="form-group">
+      <label for="exampleInputDia">Dia de la semana</label>
+      <!--<input type="text" class="form-control" id="exampleInputDia" placeholder="weekd-day" ng-model="weekd.day">-->
+      <input type="text" class="form-control" id="exampleInputDia" placeholder="{{weekd.day}}" ng-model="weekd.day">
+
+      <label for="exampleInputReference">Referencia de ubicacion</label>
+      <input type="text" class="form-control" id="exampleInputReference" placeholder="{{weekd.ref}}" ng-model="weekd.ref">
+    </div>
+
+    <button type="submit" class="btn btn-success" ng-click="crearDias();">Crear dia</button>
+    <button type="button" class="btn btn-info" ui-sref="home.config">Cancelar</button>
+
+  </form>
+</div>
