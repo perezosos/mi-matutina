@@ -1,12 +1,12 @@
+
 <div ui-view>
 
-<div class="col-md-12 text-center">
-  <h3>Mi matutina -> tercer trimestre - 2016</h3>
-</div>
+  <div class="row text-center">
+    <h3>Mi matutina -> tercer trimestre - 2016</h3>
+  </div>
 
-<div class="col-md-12">
   <div class="row">
-    <div id="tablero" class="col-md-12 text-center">
+    <div id="tablero" class="text-center">
       <h1>TABLERO</h1>
     </div>
   </div>
@@ -15,89 +15,75 @@
 
     <div id="capa2"></div>
 
-    <div class="col-md-12 text-center">
-      <div class="weekdays">
-        <a ng-repeat="weekd in varweekd" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>
-      </div>
-      <!--
+    <div class="weekdays text-center">
+      <a ng-repeat="weekd in varweekd" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-2">
       <table class="table table-bordered">
-        <tr class="success">
-          <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.dom" role="button">DOMINGO</a></td>
-          <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.lun" role="button">LUNES</a></td>
-          <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.mar" role="button">MARTES</a></td>
-          <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.mie" role="button">MIERCOLES</a></td>
-          <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.jue" role="button">JUEVES</a></td>
-          <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.vie" role="button">VIERNES</a></td>
-          <td class="success"><a class="btn btn-success" ui-sref="home.versiculo.sab" role="button">SABADO</a></td>
+        <tr>
+          <td class="info"><h1>Other module</h1></td>
+        </tr>
+        <tr>
+          <div>
+            <div id="capa"></div>
+            <!--<form>
+              <input id="texto" type="text">
+              <input type="button" value="Generar nro al" onclick="aleatorio(getElementById('texto').value);">
+              <input type="button" value="Generar" ng-click="generarNroRandom();">
+              <input type="button" value="Generar dias semana" ng-click="generarDias();">
+              <input type="button" value="Generar dias tabla" ng-click="genera_dias_semana();">
+            </form>-->
+          </div>
         </tr>
       </table>
-      -->
+    </div>
+
+    <div class="col-md-8">
+
+      <div id="tablero" class="text-center"></div>
+
+      <table class="table table-bordered text-center">
+        <tr class="success">
+          <td><p>1</p></td>
+          <td><p>2</p></td>
+          <td><p>3</p></td>
+          <td><p>4</p></td>
+          <td><p>5</p></td>
+        </tr>
+        <tr class="success">
+          <td><p>6</p></td>
+          <td><p>7</p></td>
+          <td><p>8</p></td>
+          <td><p>9</p></td>
+          <td><p>10</p></td>
+        </tr>
+        <tr class="success">
+          <td><p>11</p></td>
+          <td><p>12</p></td>
+          <td><p>13</p></td>
+          <td><p>14</p></td>
+          <td><p>15</p></td>
+        </tr>
+        <tr class="success">
+          <td><p>16</p></td>
+          <td><p>17</p></td>
+          <td><p>18</p></td>
+          <td><p>19</p></td>
+          <td><p>20</p></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col-md-2">
+      <table class="table table-bordered">
+        <tr>
+          <td class="info"><h1>Other compo- nents</h1></td>
+        </tr>
+      </table>
     </div>
   </div>
-</div>
-
-<div class="col-md-2">
-  <table class="table table-bordered">
-    <tr class="success">
-      <td class="info"><h1>Other module</h1></td>
-    </tr>
-    <tr>
-      <div>
-        <form>
-          <!--<input id="texto" type="text">
-          <input type="button" value="Generar nro al" onclick="aleatorio(getElementById('texto').value);">
-          <input type="button" value="Generar" ng-click="generarNroRandom();">
-          <input type="button" value="Generar dias semana" ng-click="generarDias();">-->
-          <!--<input type="button" value="Generar dias tabla" ng-click="genera_dias_semana();">-->
-        </form>
-
-        <div id="capa"></div>
-      </div>
-    </tr>
-  </table>
-</div>
-
-<div class="col-md-8">
-
-  <div id="tablero" class="text-center"></div>
-
-  <table class="table table-bordered text-center">
-    <tr class="success">
-      <td class="success"><p>1</p></td>
-      <td class="success"><p>2</p></td>
-      <td class="success"><p>3</p></td>
-      <td class="success"><p>4</p></td>
-      <td class="success"><p>5</p></td>
-    </tr>
-    <tr class="success">
-      <td class="success"><p>6</p></td>
-      <td class="success"><p>7</p></td>
-      <td class="success"><p>8</p></td>
-      <td class="success"><p>9</p></td>
-      <td class="success"><p>10</p></td>
-    </tr>
-    <tr class="success">
-      <td class="success"><p>11</p></td>
-      <td class="success"><p>12</p></td>
-      <td class="success"><p>13</p></td>
-      <td class="success"><p>14</p></td>
-      <td class="success"><p>15</p></td>
-    </tr>
-    <tr class="success">
-      <td class="success"><p>16</p></td>
-      <td class="success"><p>17</p></td>
-      <td class="success"><p>18</p></td>
-      <td class="success"><p>19</p></td>
-      <td class="success"><p>20</p></td>
-    </tr>
-  </table>
-</div>
-<div class="col-md-2">
-  <table class="table table-bordered">
-    <tr class="success">
-      <td class="info"><h1>Other compo- nents</h1></td>
-    </tr>
-  </table>
-</div>
-
-</div>
+</div><!--/end ui-view-->

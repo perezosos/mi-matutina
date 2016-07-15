@@ -1,19 +1,22 @@
-<div>
+
+<div class="col-md-12">
   <h2>Lista de dias</h2>
 </div>
-<div class="table">
+
+<div class="table col-md-12">
+
   <div class="tr col-md-12">
-    <div class="td col-md-2">Dia</div>
-    <div class="td col-md-3">Url reference</div>
-  </div>
-  <div class="tr col-md-12" ng-repeat="weekd in varweekd">
-    <div class="td col-md-2">
-      {{weekd.day}}
-    </div>
-    <div class="td col-md-3">
-      {{weekd.ref}}
-    </div>
+    <div class="td col-md-2"><h4>Dia</h4></div>
+    <div class="td col-md-3"><h4>Url referencia</h4></div>
   </div>
 
-  <button type="button" class="btn btn-info" ui-sref="home.config">Volver</button>
+  <div class="tr col-md-12" ng-repeat="weekd in varweekd">
+    <div class="td col-md-2">- {{weekd.day}}</div>
+    <div class="td col-md-3">{{weekd.ref}}</div>
+  </div>
+
+</div>
+
+<div class="col-md-12">
+  <button type="button" class="btn btn-info" ui-sref="home.config.dias">Volver</button>
 </div>

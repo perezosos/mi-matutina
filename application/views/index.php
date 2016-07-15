@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 	<head>
@@ -50,23 +51,21 @@
 
 	<body>
 
-		<div class="">
-			<div ng-app="seedApp">
+		<div ng-app="seedApp">
 
-				<div class="superBack">
-					<br><br>
-				</div>
-				<div class="superFront">
-				</div>
-				<div class="text-center footer">
-					<a class="btn btn-success" role="button" ui-sref="home.tablero">Go to Tablero</a>
-					<a class="btn btn-danger" role="button" ui-sref="home.config">Conf.*</a>
-				</div>
+			<div class="superBack"><br><br></div>
 
-				<div ui-view>
-				</div>
+			<div class="superFront"></div>
 
+			<div class="text-center header">
+				<a class="btn btn-success" role="button" ui-sref="home.tablero">Go to Tablero</a>
+				<a class="btn btn-danger" role="button" ui-sref="home.config" ng-click="init();">Conf.*</a>
 			</div>
+
+			<div ui-view></div>
+
+			<pre ng-controller="TableroController" class="alert alert-info text-right">User: Visite - You logged on time: {{mytime | date:'shortTime' }}</pre>
+
 		</div>
 
 	</body>

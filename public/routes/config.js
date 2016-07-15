@@ -13,17 +13,21 @@ angular.module('seedApp')
     });
 
     $stateProvider.state('home.config.create', {
-      url: '/create',
+      url: '/dias/create',
       templateUrl: path + '/create.html',
       controller: 'ConfigController'
     });
 
     $stateProvider.state('home.config.list', {
-      url: '/list',
+      url: '/dias/list',
       templateUrl: path + '/list.html',
       controller: 'ConfigController'
     });
 
-    $urlRouterProvider.otherwise('/');
+    $stateProvider.state('home.config.dias', {
+      url: '/dias',
+      templateUrl: path + '/configdias.html',
+      controller: 'ConfigController'
+    });
   }
 ]);

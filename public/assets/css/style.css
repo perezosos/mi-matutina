@@ -31,17 +31,17 @@
 }
 */
 
-.footer {
+.header {
   position: relative;
   top: 4px;
 }
-.footer a {
+.header a {
   margin: 3px;
 }
-.footer .btn-success{
+.header .btn-success{
   background: green;
 }
-.footer .btn-danger{
+.header .btn-danger{
   background: black;
   border-color: #628259;
 }
@@ -87,9 +87,9 @@
 .container {
   background: black;
 }
-.footer {
+.header {
   background: lightgreen;
 }
-.footer a {
+.header a {
   background: red;
 }*/

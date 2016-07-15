@@ -15,8 +15,6 @@ angular.module('seedApp')
       controller: 'ConfigController'
     });
 
-    $urlRouterProvider.otherwise('/');
-
     $stateProvider.state('home.versiculo', {
       url: 'versiculo',
       templateUrl: path2 + '/versiculo/index.html',
