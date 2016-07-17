@@ -1,8 +1,42 @@
 'use strict';
 
 angular.module('seedApp')
-.controller('TableroController', ['$scope', '$log',
-  function($scope, $log) {
+.controller('TableroController', ['$scope', '$log', 'DataLocal',
+  function($scope, $log, DataLocal) {
+
+    // TODO lesson persistence data
+    console.log(DataLocal);
+    //DataLocal.hi = 'hola';
+    //console.log(DataLocal.hi);
+    $scope.lorem = 'lorem ipsum sit amed';
+    $scope.datum = DataLocal.getItems;
+
+    $scope.onSelect = function(data) {
+      //DataLocal.getItems.forEach(function(item) {
+      $scope.datum.forEach(function(item) {
+        if (item.id == data.id) {
+          item.isDefault = true;
+        } else {
+          item.isDefault = false;
+        }
+      });
+      DataLocal.save();
+    }
+
+    $scope.addElement = function() {
+      DataLocal.addElement({
+        id: 52,
+        isDefault: true,
+        days: [
+          {
+            name: 'Domingo',
+            versiculo: 'lorem ipsum sit ammed',
+            versiculo_dato: 'salmos: 3:15'
+          }
+        ]
+      });
+    }
+
 
     $scope.generarNroRandom = function() {
       var numPosibilities = 3;

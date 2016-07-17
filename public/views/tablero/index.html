@@ -6,6 +6,19 @@
     <h3><p class="text-capitalize">mi matutina - tercer trimestre - 2016</p></h3>
   </div>
 
+  <div class="">
+    <h1>HOLA {{lorem}}</h1>
+  </div>
+  <div>
+    <div ng-click="onSelect(data1)" ng-repeat="data1 in datum track by $index">
+        {{data1.id}}
+    </div>
+  </div>
+  <div class="" ng-click="addElement()">
+    add element
+  </div>
+
+
   <div class="row">
     <div id="tablero" class="text-center">
       <h1>TABLERO</h1>

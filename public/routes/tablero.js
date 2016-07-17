@@ -10,9 +10,9 @@ angular.module('seedApp')
     $stateProvider.state('home.tablero', {
       url: 'tablero',
       templateUrl: path1 + '/index.html',
-      /*controller: 'TableroController',*/
+      controller: 'TableroController',
       /*controller: 'WeekController',*/
-      controller: 'ConfigController'
+      /*controller: 'ConfigController'*/
     });
 
     $stateProvider.state('home.versiculo', {

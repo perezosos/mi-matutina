@@ -23,6 +23,7 @@
 		<script src="./public/routes/config.js"></script>
 
 		<script src="./public/services/persons.js"></script>
+		<script src="./public/services/data.js"></script>
 
 		<script src="./public/controllers/main.js"></script>
 		<script src="./public/controllers/home.js"></script>
