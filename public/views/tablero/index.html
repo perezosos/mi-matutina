@@ -40,15 +40,15 @@
             Semana: {{data2.periodo}} /Idioma: {{data2.language}} /Titulo: {{data2.matutinaTitle}} - Cat:{{data2.matutinaCategoria}}
             <div ng-if="data2.language == 'ES'">
               <!--<a ng-repeat="data3 in data2.days" class="btn btn-success" role="button" href="{{data3.ref}}">{{data3.name}}</a>-->
-              <a ng-repeat="weekd in weekdaysES" class="btn btn-success" role="button" ui-sref="{{weekd.dire}}">{{weekd.dia}}</a>
+              <a ng-repeat="weekdES in weekdaysES" class="btn btn-success" role="button" ui-sref="{{weekdES.dire}}">{{weekdES.dia}}</a>
             </div>
             <div ng-if="data2.language == 'EN'">
               <!--<a ng-repeat="weekd in weekdaysING" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>-->
-              <a ng-repeat="weekd in weekdaysEN" class="btn btn-success" role="button" ui-sref="{{weekd.dire}}">{{weekd.day}}</a>
+              <a ng-repeat="weekdEN in weekdaysEN" class="btn btn-success" role="button" ui-sref="{{weekdEN.dire}}">{{weekdEN.dia}}</a>
             </div>
             <div ng-if="data2.language == 'PT'">
               <!--<a ng-repeat="weekd in weekdaysPT" class="btn btn-success" role="button" ng-sref="{{weekd.ref}}">{{weekd.day}}</a>-->
-              <a ng-repeat="weekd in weekdaysPT" class="btn btn-success" role="button" ui-sref="{{weekd.dire}}">{{weekd.day}}</a>
+              <a ng-repeat="weekdPT in weekdaysPT" class="btn btn-success" role="button" ui-sref="{{weekdPT.dire}}">{{weekdPT.dia}}</a>
             </div>
           </div>
       </div>
