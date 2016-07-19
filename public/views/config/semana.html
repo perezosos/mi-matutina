@@ -1,0 +1,74 @@
+
+<div class="col-md-12">
+  <h2>Configurar - Seleccion de semanas descargadas</h2>
+</div>
+<!--
+<div class="col-md-12">
+  <h4><a ui-sref="home.config.create">Crear dia</a></h4>
+</div>
+-->
+
+<div ng-repeat="data2 in datum track by $index" class="col-md-12">
+  <div ng-if="data2.isDefault == true">
+    <h4>Semana seleccionada: <strong>Nro: {{$index + 1}} | {{data2.periodo}} | Idioma: {{data2.language}}</strong></h4>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <h4>Lista de descargas</h4>
+</div>
+
+<div class="col-md-12">
+  <hr>
+  <div class="col-md-2">
+    <h4>Nro</h4>
+  </div>
+  <div class="col-md-4">
+    <h4>Detalle semana</h4>
+  </div>
+  <div class="col-md-3">
+    <h4>Categoria</h4>
+  </div>
+  <div class="col-md-3">
+    <h4>Titulo</h4>
+  </div>
+  <div class="col-md-12">
+    <hr>
+  </div>
+  <div ng-click="onSelect(data1)" ng-repeat="data1 in datum track by $index">
+    <div ng-if="data1.isDefault == true" class="col-md-2">
+      {{$index + 1}} * Select
+    </div>
+    <div ng-if="data1.isDefault == false" class="col-md-2">
+      {{$index + 1}}
+    </div>
+    <div class="col-md-4">
+      {{data1.periodo}} {{data1.language}}<br>
+    </div>
+    <div class="col-md-3">
+      {{data1.matutinaCategoria}}<br>
+    </div>
+    <div class="col-md-3">
+      {{data1.matutinaTitle}}<br>
+    </div>
+    <div class="col-md-12">
+      <hr>
+    </div>
+  </div>
+
+
+  <div class="col-md-12">
+    <h4>Detalle de la semana seleccionada</h4>
+  </div>
+
+  <div ng-repeat="data2 in datum track by $index" class="col-md-12">
+    <div ng-if="data2.isDefault == true">
+      <strong>Nro: {{$index + 1}}</strong> <br>
+      Semana: {{data2.periodo}} <br>
+      Idioma: {{data2.language}} <br>
+      Categoria: {{data2.matutinaCategoria}} <br>
+      Titulo: {{data2.matutinaTitle}} <br>
+      Subido por: {{data2.nickUserP}}
+    </div>
+  </div>
+</div>

@@ -29,5 +29,11 @@ angular.module('seedApp')
       templateUrl: path + '/configdias.html',
       controller: 'ConfigController'
     });
+
+    $stateProvider.state('home.config.semana', {
+      url: '/semana',
+      templateUrl: path + '/semana.html',
+      controller: 'ConfigController'
+    });
   }
 ]);

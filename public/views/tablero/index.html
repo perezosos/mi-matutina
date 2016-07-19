@@ -7,19 +7,21 @@
 <div ui-view class="ui-view-c">
 
   <!---->
+  <!--
   <div class="text-center">
     <div class="">
       <h4>Seleccione una semana</h4>
     </div>
     <div class="col-md-12">
       <a ng-click="onSelect(data1)" ng-repeat="data1 in datum track by $index">
-          | - {{data1.periodo}} {{data1.language}}
-      </a><a href="#">|</a>
+        | {{data1.periodo}} {{data1.language}} {{data1.matutinaCategoria}} {{data1.matutinaTitle}} *Post by: {{data1.nickUserP}} |<br>
+      </a>
     </div>
     <div class="" ng-click="addElement()">
       add element
     </div>
   </div>
+  <!---->
   <!---->
 
   <div class="row">
@@ -35,7 +37,7 @@
     <div class="text-center">
       <div ng-repeat="data2 in datum track by $index">
           <div ng-if="data2.isDefault == true">
-            ID: {{data2.id}} Periodo: {{data2.periodo}} Idioma: {{data2.language}}
+            Semana: {{data2.periodo}} /Idioma: {{data2.language}} /Titulo: {{data2.matutinaTitle}} - Cat:{{data2.matutinaCategoria}}
             <div ng-if="data2.language == 'ES'">
               <!--<a ng-repeat="data3 in data2.days" class="btn btn-success" role="button" href="{{data3.ref}}">{{data3.name}}</a>-->
               <a ng-repeat="weekd in weekdaysES" class="btn btn-success" role="button" ui-sref="{{weekd.dire}}">{{weekd.dia}}</a>

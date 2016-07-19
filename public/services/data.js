@@ -6,7 +6,10 @@ angular.module('seedApp').factory('DataLocal', [
     var data = [
       {
         id: 51,
+        nickUserP: 'Perezoso Master',
         periodo: '17-23/07/2016',
+        matutinaCategoria: 'Joven',
+        matutinaTitle: '#Visita mi Muro',
         isDefault: true,
         language: 'ES',
         days: [
@@ -49,7 +52,10 @@ angular.module('seedApp').factory('DataLocal', [
       },
       {
         id: 52,
+        nickUserP: 'Perezoso Master',
         periodo: '17-23/07/2016',
+        matutinaCategoria: 'Joven',
+        matutinaTitle: '#Visita mi Muro',
         isDefault: false,
         language: 'EN',
         days: [
@@ -92,7 +98,10 @@ angular.module('seedApp').factory('DataLocal', [
       },
       {
         id: 53,
+        nickUserP: 'Perezoso Master',
         periodo: '17-23/07/2016',
+        matutinaCategoria: 'Adultos',
+        matutinaTitle: 'Sin Titulo',
         isDefault: false,
         language: 'PT',
         days: [
