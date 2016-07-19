@@ -12,7 +12,7 @@ angular.module('seedApp')
     $scope.datum = DataLocal.getItems;
 
     $scope.onSelect = function(data) {
-      //DataLocal.getItems.forEach(function(item) {
+      //DataLocal.getItems.forEach(function(item) 
       $scope.datum.forEach(function(item) {
         if (item.id == data.id) {
           item.isDefault = true;
@@ -21,7 +21,7 @@ angular.module('seedApp')
         }
       });
       DataLocal.save();
-    }
+    };
 
     $scope.addElement = function() {
       DataLocal.addElement({
@@ -35,7 +35,40 @@ angular.module('seedApp')
           }
         ]
       });
-    }
+    };
+
+    var weekdayES = [
+      {dia: 'Domingo', dire: 'home.versiculo.dom', ref: '#/versiculo/domingo'},
+      {dia: 'Lunes', dire: 'home.versiculo.dom', ref: '#/versiculo/lunes'},
+      {dia: 'Martes', dire: 'home.versiculo.dom', ref: '#/versiculo/martes'},
+      {dia: 'Miércoles', dire: 'home.versiculo.dom', ref: '#/versiculo/miercoles'},
+      {dia: 'Jueves', dire: 'home.versiculo.dom', ref: '#/versiculo/jueves'},
+      {dia: 'Viernes', dire: 'home.versiculo.dom', ref: '#/versiculo/viernes'},
+      {dia: 'Sábado', dire: 'home.versiculo.dom', ref: '#/versiculo/sabado'}
+    ];
+    $scope.weekdaysES = weekdayES;
+
+    var weekdayEN = [
+      {day: 'Sunday', dire: 'home.versiculo.dom', ref: '#/versiculo/domingo'},
+      {day: 'Monday', dire: 'home.versiculo.dom', ref: '#/versiculo/lunes'},
+      {day: 'Tuesday', dire: 'home.versiculo.dom', ref: '#/versiculo/martes'},
+      {day: 'Wednesday', dire: 'home.versiculo.dom', ref: '#/versiculo/miercoles'},
+      {day: 'Tursday', dire: 'home.versiculo.dom', ref: '#/versiculo/jueves'},
+      {day: 'Friday', dire: 'home.versiculo.dom', ref: '#/versiculo/viernes'},
+      {day: 'Saturday', dire: 'home.versiculo.dom', ref: '#/versiculo/sabado'}
+    ];
+    $scope.weekdaysEN = weekdayEN;
+
+    var weekdayPT = [
+      {day: 'Domingo', dire: 'home.versiculo.dom', ref: '#/versiculo/domingo'},
+      {day: 'Segunda-feira', dire: 'home.versiculo.dom', ref: '#/versiculo/lunes'},
+      {day: 'Terça-feira', dire: 'home.versiculo.dom', ref: '#/versiculo/martes'},
+      {day: 'Quarta-feira', dire: 'home.versiculo.dom', ref: '#/versiculo/miercoles'},
+      {day: 'Quinta-feira', dire: 'home.versiculo.dom', ref: '#/versiculo/jueves'},
+      {day: 'Sexta-feira', dire: 'home.versiculo.dom', ref: '#/versiculo/viernes'},
+      {day: 'Sábado', dire: 'home.versiculo.dom', ref: '#/versiculo/sabado'}
+    ];
+    $scope.weekdaysPT = weekdayPT;
 
 
     $scope.generarNroRandom = function() {
@@ -192,3 +225,34 @@ function aleatorio(texto) {
   capa.appendChild(h1);
 }
 */
+
+
+
+      function toggleFullScreen(elem) {
+      /*elem = document.getElementById("ui-view-b");*/
+      if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) ||
+      (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) ||
+      (document.mozFullScreen !== undefined && !document.mozFullScreen) ||
+      (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+        if (elem.requestFullScreen) {
+            elem.requestFullScreen();
+        } else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullScreen) {
+            elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+      }
+      else {
+        if (document.cancelFullScreen) {
+            document.cancelFullScreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+      }
+    };

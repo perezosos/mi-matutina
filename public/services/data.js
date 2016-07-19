@@ -6,28 +6,130 @@ angular.module('seedApp').factory('DataLocal', [
     var data = [
       {
         id: 51,
-        isDefault: false,
+        periodo: '17-23/07/2016',
+        isDefault: true,
+        language: 'ES',
         days: [
           {
-            name: 'Domingo',
-            versiculo: 'lorem ipsum sit ammed',
-            versiculo_dato: 'salmos: 3:15'
+            dia: 1,
+            versiculo: 'lorem ipsum sit ammed día 1',
+            versiculo_dato: 'Apocalipsis: 3:15'
           },
           {
-            name: 'Lunes',
-            versiculo: 'lorem ipsum sit ammed',
-            versiculo_dato: 'salmos: 3:15'
+            dia: 2,
+            versiculo: 'lorem ipsum sit ammed día 2',
+            versiculo_dato: 'Apocalipsis: 3:15'
+          },
+          {
+            dia: 3,
+            versiculo: 'lorem ipsum sit ammed día 3',
+            versiculo_dato: 'Apocalipsis: 3:15'
+          },
+          {
+            dia: 4,
+            versiculo: 'lorem ipsum sit ammed día 4',
+            versiculo_dato: 'Apocalipsis: 3:15'
+          },
+          {
+            dia: 5,
+            versiculo: 'lorem ipsum sit ammed día 5',
+            versiculo_dato: 'Apocalipsis: 3:15'
+          },
+          {
+            dia: 6,
+            versiculo: 'lorem ipsum sit ammed día 6',
+            versiculo_dato: 'Apocalipsis: 3:15'
+          },
+          {
+            dia: 7,
+            versiculo: 'lorem ipsum sit ammed día 7',
+            versiculo_dato: 'Apocalipsis: 3:15'
           }
         ]
       },
       {
         id: 52,
-        isDefault: true,
+        periodo: '17-23/07/2016',
+        isDefault: false,
+        language: 'EN',
         days: [
           {
-            name: 'Domingo',
-            versiculo: 'lorem ipsum sit ammed',
-            versiculo_dato: 'salmos: 3:15'
+            dia: 1,
+            versiculo: 'lorem ipsum sit ammed day 1',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 2,
+            versiculo: 'lorem ipsum sit ammed day 2',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 3,
+            versiculo: 'lorem ipsum sit ammed day 3',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 4,
+            versiculo: 'lorem ipsum sit ammed day 4',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 5,
+            versiculo: 'lorem ipsum sit ammed day 5',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 6,
+            versiculo: 'lorem ipsum sit ammed day 6',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 7,
+            versiculo: 'lorem ipsum sit ammed day 7',
+            versiculo_dato: 'Revelations: 3:15'
+          }
+        ]
+      },
+      {
+        id: 53,
+        periodo: '17-23/07/2016',
+        isDefault: false,
+        language: 'PT',
+        days: [
+          {
+            dia: 1,
+            versiculo: 'lorem ipsum sit ammed dia 1',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 2,
+            versiculo: 'lorem ipsum sit ammed dia 2',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 3,
+            versiculo: 'lorem ipsum sit ammed dia 3',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 4,
+            versiculo: 'lorem ipsum sit ammed dia 4',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 5,
+            versiculo: 'lorem ipsum sit ammed dia 5',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 6,
+            versiculo: 'lorem ipsum sit ammed dia 6',
+            versiculo_dato: 'Revelations: 3:15'
+          },
+          {
+            dia: 7,
+            versiculo: 'lorem ipsum sit ammed dia 7',
+            versiculo_dato: 'Revelations: 3:15'
           }
         ]
       }

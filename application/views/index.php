@@ -52,24 +52,9 @@
 
 	<body>
 
-		<div ng-app="seedApp">
+		<div class="containerA" ng-app="seedApp">
 
-			<div class="superBack"><br><br></div>
-
-			<div class="superFront"></div>
-
-			<div class="header text-center">
-				<a class="btn btn-success" role="button" ui-sref="home.tablero">Go to Tablero</a>
-				<a class="btn btn-danger" role="button" ui-sref="home.config" ng-click="init();">Conf.*</a>
-			</div>
-
-			<div ui-view></div>
-			<div class="footer">
-				<hr>
-				<p class="alert alert-info text-center">Press <kbd>F11</kbd> for enter and out of full screen mode</p>
-				<pre ng-controller="TableroController" class="alert alert-danger text-right"><strong>User:</strong> <em> Visite </em> - You logged on time: <mark> {{mytime | date:'shortTime' }} </mark></pre>
-
-			</div>
+			<div ui-view class="ui-view-a"></div>
 
 		</div>
 

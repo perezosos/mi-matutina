@@ -64,6 +64,20 @@
 .vers p {
   font-size: 70px;
 }
+
+.containerA {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.ui-view-a {
+  width: 100%;
+  height: 100%;
+}
 .superBack {
   position: absolute;
   background: black;
@@ -81,6 +95,20 @@
   margin: 0px;
   margin-left: 3.0755%;
   margin-right: 3.0755%;
+}
+.header {
+  margin-bottom: 15px;
+}
+.alertscreen {
+  position: relative;
+
+}
+.alertscreen p {
+  padding: 5px;
+}
+.footer pre {
+  margin-bottom: 5px;
+  padding: 2px;
 }
 
 /*
