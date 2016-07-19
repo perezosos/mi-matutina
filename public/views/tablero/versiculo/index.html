@@ -1,0 +1,26 @@
+
+<div ui-view>
+
+  <div>
+    <h3>{{data.trimestre}} {{data.anio}} {{data.categoriaMatutina}} {{data.tituloMatutina}}</h3>
+    <!--dia y fecha-->
+    <h2>{{versiculo.dia}}{{versiculo.fechaDDMM}}</h2>
+  </div>
+
+  <div class="text-center">
+    <!--versiculo de memoria-->
+    <div class="vers">
+      <p>{{versiculo.versiculo}}</p>
+    </div>
+
+    <!--texto biblico-->
+    <div class="texto">
+      <h2>{{versiculo.texto}}</h2>
+    </div>
+  </div>
+
+  <div class="text-center">
+      <a class="btn btn-success" ui-sref="home.tablero" role="button">Volver al tablero</a>
+  </div>
+
+</div><!--7end ui-view-->

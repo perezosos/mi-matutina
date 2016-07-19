@@ -16,23 +16,31 @@
 		<link rel="stylesheet" href="./public/bower_components/bootstrap/dist/css/bootstrap.css">
 
 		<script src="./public/app.js"></script>
+
+		<script src="./public/routes/tablero/tablero.js"></script>
+		<script src="./public/routes/tablero/versiculo/versiculo.js"></script>
+
+		<script src="./public/routes/config.js"></script>
+		<script src="./public/routes/demo.js"></script>
 		<script src="./public/routes/home.js"></script>
 		<script src="./public/routes/public.js"></script>
-		<script src="./public/routes/demo.js"></script>
-		<script src="./public/routes/tablero.js"></script>
-		<script src="./public/routes/config.js"></script>
+		<!--<script src="./public/routes/tablero.js"></script>-->
 
-		<script src="./public/services/persons.js"></script>
 		<script src="./public/services/data.js"></script>
+		<script src="./public/services/persons.js"></script>
 
-		<script src="./public/controllers/main.js"></script>
-		<script src="./public/controllers/home.js"></script>
-		<script src="./public/controllers/contact.js"></script>
 		<script src="./public/controllers/demo/persons.js"></script>
-		<script src="./public/controllers/tablero-controller.js"></script>
+
+		<script src="./public/controllers/matutina-config/config.js"></script>
+		<script src="./public/controllers/matutina-engine/tablero.js"></script>
+
+		<script src="./public/controllers/config-controller.js"></script>
+		<script src="./public/controllers/contact.js"></script>
+		<script src="./public/controllers/home.js"></script>
+		<script src="./public/controllers/main.js"></script>
+		<!--<script src="./public/controllers/tablero-controller.js"></script>-->
 		<script src="./public/controllers/versiculo-controller.js"></script>
 		<script src="./public/controllers/week-controller.js"></script>
-		<script src="./public/controllers/config-controller.js"></script>
 
 		<style>
 			/*

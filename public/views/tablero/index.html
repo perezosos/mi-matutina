@@ -1,10 +1,10 @@
 
-<div ui-view class="ui-view-c">
+<div class="row text-center">
+  <!--/text-lowercase, text-uppercase, text-capitalize (min, may, para nombres-primera letra may uscula)-->
+  <h3><p class="text-capitalize">mi matutina - tercer trimestre - 2016</p></h3>
+</div>
 
-  <div class="row text-center">
-    <!--/text-lowercase, text-uppercase, text-capitalize (min, may, para nombres-primera letra may uscula)-->
-    <h3><p class="text-capitalize">mi matutina - tercer trimestre - 2016</p></h3>
-  </div>
+<div ui-view class="ui-view-c">
 
   <!---->
   <div class="text-center">
@@ -38,23 +38,23 @@
             ID: {{data2.id}} Periodo: {{data2.periodo}} Idioma: {{data2.language}}
             <div ng-if="data2.language == 'ES'">
               <!--<a ng-repeat="data3 in data2.days" class="btn btn-success" role="button" href="{{data3.ref}}">{{data3.name}}</a>-->
-              <a ng-repeat="weekd in weekdaysES" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.dia}}</a>
+              <a ng-repeat="weekd in weekdaysES" class="btn btn-success" role="button" ui-sref="{{weekd.dire}}">{{weekd.dia}}</a>
             </div>
             <div ng-if="data2.language == 'EN'">
               <!--<a ng-repeat="weekd in weekdaysING" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>-->
-              <a ng-repeat="weekd in weekdaysEN" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>
+              <a ng-repeat="weekd in weekdaysEN" class="btn btn-success" role="button" ui-sref="{{weekd.dire}}">{{weekd.day}}</a>
             </div>
             <div ng-if="data2.language == 'PT'">
               <!--<a ng-repeat="weekd in weekdaysPT" class="btn btn-success" role="button" ng-sref="{{weekd.ref}}">{{weekd.day}}</a>-->
-              <a ng-repeat="weekd in weekdaysPT" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>
+              <a ng-repeat="weekd in weekdaysPT" class="btn btn-success" role="button" ui-sref="{{weekd.dire}}">{{weekd.day}}</a>
             </div>
           </div>
       </div>
     </div>
 
-    <div class="weekdays text-center">
+    <!--<div class="weekdays text-center">
       <a ng-repeat="weekd in varweekd" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>
-    </div>
+    </div>-->
 
   </div>
 
