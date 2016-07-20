@@ -12,7 +12,7 @@
 
     <div>
       <h3>TERCER TRIMESTRE 2016 - MATUTINA {{data2.matutinaCategoria}} - {{data2.matutinaTitle}} - {{data2.language}}</h3>
-        <h2>{{day.title}}</h2>
+        <h2>{{day.title}} {{day_id}}</h2>
         <div class="text-center">
           <div class="vers">
             <p>"{{day.versiculo}}"</p>
@@ -27,6 +27,46 @@
           <div><hr></div>
         </div>
     </div>
+
+    <div ng-repeat="data2 in datum track by $index" class="col-md-12">
+
+      <div ng-if="data2.isDefault == true">
+        <!--encabezado-->
+        <h3>TERCER TRIMESTRE 2016 - MATUTINA {{data2.matutinaCategoria}} - {{data2.matutinaTitle}} - {{data2.language}}</h3>
+
+        <div ng-repeat="diasemana in data2.days" ng-if="diasemana.dia == day_id">
+        <!--<div ng-repeat="diasemana in data2.days">-->
+          <!--dia y fecha-->
+          <!--<h2>Dia {{diasemana.dia}} / {{diaSem.nroDia + 1}} {{diaSem.dia}} {{data2.periodo}} {{data2.language}}</h2>-->
+          <h2>{{diasemana.title}}</h2>
+
+          <div class="text-center">
+            <!--versiculo de memoria-->
+            <div class="vers">
+              <p>"{{diasemana.versiculo}}"</p>
+            </div>
+
+            <!--texto biblico-->
+            <div class="texto text-center">
+              <h2>({{diasemana.texto}}).</h2>
+            </div>
+
+            <div><hr></div>
+
+            <div>
+                <a class="btn btn-success" ui-sref="home.tablero" role="button">Volver al tablero</a>
+            </div>
+
+            <div><hr></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 </div>
 

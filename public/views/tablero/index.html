@@ -37,7 +37,7 @@
     <div class="text-center">
       <div ng-repeat="data2 in datum track by $index">
           <div ng-if="data2.isDefault == true">
-            Semana: {{data2.periodo}} /Idioma: {{data2.language}} /Titulo: {{data2.matutinaTitle}} - Cat:{{data2.matutinaCategoria}}
+            Semana: {{data2.periodo}} / Matutina:{{data2.matutinaCategoria}} - {{data2.matutinaTitle}} / Idioma: {{data2.language}}
             <div ng-if="data2.language == 'ES'">
               <!--<a ng-repeat="data3 in data2.days" class="btn btn-success" role="button" href="{{data3.ref}}">{{data3.name}}</a>-->
               <!--<a ng-repeat="weekdES in weekdaysES" class="btn btn-success" role="button" ui-sref="{{weekdES.dire}}" ng-click="getDiaByID($index);">{{weekdES.dia}}</a>-->
@@ -45,7 +45,7 @@
 
               <!-- TODO -->
               <!-- <a ng-repeat="weekdES in weekdaysES" class="btn btn-success" role="button" ui-sref="home.tablero.versiculo" ng-click="getDiaByID($index)">{{weekdES.dia}}</a> -->
-              <a ng-repeat="weekdES in weekdaysES" class="btn btn-success" role="button" ui-sref="verse({day_id: weekdES.id})">{{weekdES.dia}}</a>
+              <a ng-repeat="weekdES in weekdaysES" class="btn btn-success" role="button" ui-sref="verse({day_id: $index+1})">{{weekdES.dia}}</a>
             </div>
             <div ng-if="data2.language == 'EN'">
               <!--<a ng-repeat="weekd in weekdaysING" class="btn btn-success" role="button" href="{{weekd.ref}}">{{weekd.day}}</a>-->

@@ -7,6 +7,8 @@ angular.module('seedApp')
   '$log',
   'DataLocal',
   function($scope, $state, $log, DataLocal) {
+    console.log(DataLocal);
+    $scope.datum = DataLocal.getItems;
     // select week
     var day_id = $state.params.day_id;
     // TODO Implement a way to get select week
@@ -14,6 +16,7 @@ angular.module('seedApp')
     console.log(day_id);
     console.log(week);
 
+    $scope.day_id = day_id;
     $scope.data2 = week;
     $scope.day = null;
 
