@@ -1,4 +1,4 @@
-'use strict';
+'use strict'; //ha sido eliminado del index.php
 
 angular.module('seedApp')
 .controller('TableroController', ['$scope', '$log', 'DataLocal',

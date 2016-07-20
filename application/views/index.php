@@ -18,7 +18,8 @@
 		<script src="./public/app.js"></script>
 
 		<script src="./public/routes/tablero/tablero.js"></script>
-		<script src="./public/routes/tablero/versiculo/versiculo.js"></script>
+		<!--<script src="./public/routes/tablero/versiculo/versiculo.js"></script>-->
+		<!--<script src="./public/routes/tablero/versiculo.js"></script>-->
 
 		<script src="./public/routes/config.js"></script>
 		<script src="./public/routes/demo.js"></script>
@@ -33,13 +34,14 @@
 
 		<script src="./public/controllers/matutina-config/config.js"></script>
 		<script src="./public/controllers/matutina-engine/tablero.js"></script>
+		<script src="./public/controllers/matutina-engine/versiculo/versiculo.js"></script>
 
-		<script src="./public/controllers/config-controller.js"></script>
+		<!--<script src="./public/controllers/config-controller.js"></script>-->
 		<script src="./public/controllers/contact.js"></script>
 		<script src="./public/controllers/home.js"></script>
 		<script src="./public/controllers/main.js"></script>
 		<!--<script src="./public/controllers/tablero-controller.js"></script>-->
-		<script src="./public/controllers/versiculo-controller.js"></script>
+		<!--<script src="./public/controllers/versiculo-controller.js"></script>-->
 		<script src="./public/controllers/week-controller.js"></script>
 
 		<style>

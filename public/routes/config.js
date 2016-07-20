@@ -9,31 +9,31 @@ angular.module('seedApp')
     $stateProvider.state('home.config', {
       url: 'config',
       templateUrl: path + '/index.html',
-      controller: 'ConfigController'
+      controller: 'MConfigController'
     });
 
     $stateProvider.state('home.config.create', {
       url: '/dias/create',
       templateUrl: path + '/create.html',
-      controller: 'ConfigController'
+      controller: 'MConfigController'
     });
 
     $stateProvider.state('home.config.list', {
       url: '/dias/list',
       templateUrl: path + '/list.html',
-      controller: 'ConfigController'
+      controller: 'MConfigController'
     });
 
     $stateProvider.state('home.config.dias', {
       url: '/dias',
       templateUrl: path + '/configdias.html',
-      controller: 'ConfigController'
+      controller: 'MConfigController'
     });
 
     $stateProvider.state('home.config.semana', {
       url: '/semana',
       templateUrl: path + '/semana.html',
-      controller: 'ConfigController'
+      controller: 'MConfigController'
     });
   }
 ]);

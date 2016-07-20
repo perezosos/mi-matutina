@@ -1,4 +1,5 @@
-'use strict';
+
+'use strict'; //ha sido eliminado del index.php
 
 angular.module('seedApp')
 .controller('ConfigController', ['$scope', '$state', '$log', 'DataLocal', function($scope, $state, $log, DataLocal) {

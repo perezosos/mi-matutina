@@ -15,38 +15,45 @@ angular.module('seedApp').factory('DataLocal', [
         days: [
           {
             dia: 1,
+            title: '17 de Julio',
             versiculo: 'lorem ipsum sit ammed día 1',
-            versiculo_dato: 'Apocalipsis: 3:15'
+            texto: 'Apocalipsis: 3:15'
           },
           {
             dia: 2,
+            title: '18 de Julio',
             versiculo: 'lorem ipsum sit ammed día 2',
-            versiculo_dato: 'Apocalipsis: 3:15'
+            texto: 'Apocalipsis: 3:15'
           },
           {
             dia: 3,
+            title: '19 de Julio',
             versiculo: 'lorem ipsum sit ammed día 3',
-            versiculo_dato: 'Apocalipsis: 3:15'
+            texto: 'Apocalipsis: 3:15'
           },
           {
             dia: 4,
+            title: '20 de Julio',
             versiculo: 'lorem ipsum sit ammed día 4',
-            versiculo_dato: 'Apocalipsis: 3:15'
+            texto: 'Apocalipsis: 3:15'
           },
           {
             dia: 5,
+            title: '21 de Julio',
             versiculo: 'lorem ipsum sit ammed día 5',
-            versiculo_dato: 'Apocalipsis: 3:15'
+            texto: 'Apocalipsis: 3:15'
           },
           {
             dia: 6,
+            title: '22 de Julio',
             versiculo: 'lorem ipsum sit ammed día 6',
-            versiculo_dato: 'Apocalipsis: 3:15'
+            texto: 'Apocalipsis: 3:15'
           },
           {
             dia: 7,
+            title: '23 de Julio',
             versiculo: 'lorem ipsum sit ammed día 7',
-            versiculo_dato: 'Apocalipsis: 3:15'
+            texto: 'Apocalipsis: 3:15'
           }
         ]
       },
@@ -61,38 +68,45 @@ angular.module('seedApp').factory('DataLocal', [
         days: [
           {
             dia: 1,
+            title: '17 de July',
             versiculo: 'lorem ipsum sit ammed day 1',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 2,
+            title: '18 de July',
             versiculo: 'lorem ipsum sit ammed day 2',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 3,
+            title: '19 de July',
             versiculo: 'lorem ipsum sit ammed day 3',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 4,
+            title: '20 de July',
             versiculo: 'lorem ipsum sit ammed day 4',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 5,
+            title: '21 de July',
             versiculo: 'lorem ipsum sit ammed day 5',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 6,
+            title: '22 de July',
             versiculo: 'lorem ipsum sit ammed day 6',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 7,
+            title: '23 de July',
             versiculo: 'lorem ipsum sit ammed day 7',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           }
         ]
       },
@@ -107,38 +121,45 @@ angular.module('seedApp').factory('DataLocal', [
         days: [
           {
             dia: 1,
+            title: '17 do July',
             versiculo: 'lorem ipsum sit ammed dia 1',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 2,
+            title: '18 do July',
             versiculo: 'lorem ipsum sit ammed dia 2',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 3,
+            title: '19 do July',
             versiculo: 'lorem ipsum sit ammed dia 3',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 4,
+            title: '20 do July',
             versiculo: 'lorem ipsum sit ammed dia 4',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 5,
+            title: '21 do July',
             versiculo: 'lorem ipsum sit ammed dia 5',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 6,
+            title: '22 do July',
             versiculo: 'lorem ipsum sit ammed dia 6',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           },
           {
             dia: 7,
+            title: '23 do July',
             versiculo: 'lorem ipsum sit ammed dia 7',
-            versiculo_dato: 'Revelations: 3:15'
+            texto: 'Revelations: 3:15'
           }
         ]
       }

@@ -1,26 +1,43 @@
 
-<div ui-view>
+<div ui-view class="ui.view-d col-md-12">
 
-  <div>
-    <h3>{{data.trimestre}} {{data.anio}} {{data.categoriaMatutina}} {{data.tituloMatutina}}</h3>
-    <!--dia y fecha-->
-    <h2>{{versiculo.dia}}{{versiculo.fechaDDMM}}</h2>
-  </div>
+  <div ng-repeat="data2 in datum track by $index" class="col-md-12">
 
-  <div class="text-center">
-    <!--versiculo de memoria-->
-    <div class="vers">
-      <p>{{versiculo.versiculo}}</p>
+    <div ng-if="data2.isDefault == true">
+      <!--encabezado-->
+      <h3>TERCER TRIMESTRE 2016 - MATUTINA {{data2.matutinaCategoria}} - {{data2.matutinaTitle}} - {{data2.language}}</h3>
+
+      <div ng-repeat="diasemana in data2.days" ng-if="diasemana.dia == diaSem.nroDia + 1">
+      <!--<div ng-repeat="diasemana in data2.days">-->
+        <!--dia y fecha-->
+        <!--<h2>Dia {{diasemana.dia}} / {{diaSem.nroDia + 1}} {{diaSem.dia}} {{data2.periodo}} {{data2.language}}</h2>-->
+        <h2>{{diasemana.title}}</h2>
+
+        <div class="text-center">
+          <!--versiculo de memoria-->
+          <div class="vers">
+            <p>"{{diasemana.versiculo}}"</p>
+          </div>
+
+          <!--texto biblico-->
+          <div class="texto text-center">
+            <h2>({{diasemana.texto}}).</h2>
+          </div>
+
+          <div><hr></div>
+
+          <div>
+              <a class="btn btn-success" ui-sref="home.tablero" role="button">Volver al tablero</a>
+          </div>
+
+          <div><hr></div>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <!--texto biblico-->
-    <div class="texto">
-      <h2>{{versiculo.texto}}</h2>
-    </div>
-  </div>
-
-  <div class="text-center">
-      <a class="btn btn-success" ui-sref="home.tablero" role="button">Volver al tablero</a>
   </div>
 
 </div><!--7end ui-view-->

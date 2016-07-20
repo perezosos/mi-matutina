@@ -9,10 +9,19 @@ angular.module('seedApp')
     $stateProvider.state('home.tablero', {
       url: 'tablero',
       templateUrl: path + '/index.html',
-      controller: 'MTableroController',
-      /*controller: 'WeekController',*/
-      /*controller: 'ConfigController'*/
+      controller: 'MTableroController'
     });
 
+    $stateProvider.state('home.tablero.versiculo', {
+      url: '/versiculo',
+      templateUrl: path + '/versiculo/index.html',
+      controller: 'MVersiculoController'
+    });
+
+    $stateProvider.state('home.tablero.versiculo.es', {
+      url: '/es',
+      templateUrl: path + '/versiculo/es.html',
+      controller: 'MVersiculoController'
+    });
   }
 ]);

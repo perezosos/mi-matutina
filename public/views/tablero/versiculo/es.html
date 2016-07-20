@@ -1,0 +1,36 @@
+
+<div ng-repeat="data4 in datum track by $index" class="col-md-12">
+
+  <div ng-if="data4.isDefault == true">
+    <!--encabezado-->
+    <h3>TERCER TRIMESTRE 2016 - MATUTINA {{data4.matutinaCategoria}} - {{data4.matutinaTitle}}</h3>
+
+    <div ng-repeat="diasemana1 in data4.days" ng-if="diasemana1.dia == diaSem.nroDia + 1">
+    <!--<div ng-repeat="diasemana1 in data4.days">-->
+      <!--dia y fecha-->
+      <h2>Dia {{diasemana1.dia}} / {{diaSem.nroDia + 1}} {{diaSem.dia}} {{data4.periodo}} {{data4.language}}</h2>
+
+      <div class="text-center">
+        <!--versiculo de memoria-->
+        <div class="vers">
+          <p>"{{diasemana1.versiculo}}"</p>
+        </div>
+
+        <!--texto biblico-->
+        <div class="texto text-center">
+          <h2>({{diasemana1.texto}}).</h2>
+        </div>
+
+        <div>
+            <a class="btn btn-success" ui-sref="home.tablero" role="button">Volver al tablero</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div ui-view></div>

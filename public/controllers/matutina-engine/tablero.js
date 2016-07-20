@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('seedApp')
-.controller('MTableroController', ['$scope', '$log', 'DataLocal',
-  function($scope, $log, DataLocal) {
+.controller('MTableroController', ['$scope', '$state', '$log', 'DataLocal',
+  function($scope, $state, $log, DataLocal) {
 
     // TODO lesson persistence data
     console.log(DataLocal);
@@ -69,6 +69,35 @@ angular.module('seedApp')
       {dia: 'Sábado', dire: 'home.tablero.versiculo.sab', ref: '#/tablero/versiculo/sabado'}
     ];
     $scope.weekdaysPT = weekdayPT;
+
+
+    $scope.diaSem = {nroDia: -1, dia: 'Dia default'};
+    $scope.getDiaByID = function(nro){
+      if (nro == 0) {
+        $scope.diaSem = {nroDia: 0, dia: 'Domingo'};
+      }
+      if (nro == 1) {
+        $scope.diaSem = {nroDia: 1, dia: 'Lunes'};
+      }
+      if (nro == 2) {
+        $scope.diaSem = {nroDia: 2, dia: 'Martes'};
+      }
+      if (nro == 3) {
+        $scope.diaSem = {nroDia: 3, dia: 'Miercoles'};
+      }
+      if (nro == 4) {
+        $scope.diaSem = {nroDia: 4, dia: 'Jueves'};
+      }
+      if (nro == 5) {
+        $scope.diaSem = {nroDia: 5, dia: 'Viernes'};
+      }
+      if (nro == 6) {
+        $scope.diaSem = {nroDia: 5, dia: 'Sabado'};
+      }
+      //$state.go('home.tablero.versiculo', {
+      //  versiculo_dia: (nro + 1)
+      //});
+    };
 
     $scope.mytime = new Date();
   }
