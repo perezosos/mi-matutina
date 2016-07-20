@@ -67,7 +67,8 @@
 
 .containerA {
   width: 100%;
-  height: 500px;
+  /*height: 500px; */ /* TODO changed it */
+  height: 100%;
   position: relative;
 }
 .container {

@@ -1,0 +1,48 @@
+<div class="matutina-verser">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-right header">
+          <span class="glyphicon glyphicon-chevron-right"
+                ng-click="goBack()"
+                aria-hidden="true"></span>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3>TERCER TRIMESTRE 2016 - MATUTINA {{data2.matutinaCategoria}} - {{data2.matutinaTitle}} - {{data2.language}}</h3>
+        <h2>{{day.title}}</h2>
+        <div class="text-center">
+          <div class="vers">
+            <p>"{{day.versiculo}}"</p>
+          </div>
+          <div class="texto text-center">
+            <h2>({{day.texto}}).</h2>
+          </div>
+          <div><hr></div>
+          <div>
+              <a class="btn btn-success" ui-sref="home.tablero" role="button">Volver al tablero</a>
+          </div>
+          <div><hr></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<style media="screen">
+.matutina-verser {
+  /*color: #fff;*/
+  /*background-image: url("./public/assets/img/serve-background.jpg");*/
+
+  background-image: url("./public/assets/img/white-background.jpg");
+}
+.matutina-verser .header {
+  font-size: 40px;
+}
+html, body, .matutina-verser {
+  width: 100%$;
+  height: 100%;
+}
+
+</style>

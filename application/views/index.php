@@ -44,6 +44,11 @@
 		<!--<script src="./public/controllers/versiculo-controller.js"></script>-->
 		<script src="./public/controllers/week-controller.js"></script>
 
+		<!-- VERSION 2 -->
+
+		<script src="./public/routes/home-v2.js"></script>
+		<script src="./public/matutina/verse/controller.js"></script>
+
 		<style>
 			/*
 			background-image: url("img_tree.png");

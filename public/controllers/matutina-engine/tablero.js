@@ -38,35 +38,35 @@ angular.module('seedApp')
     };
 
     var weekdayES = [
-      {dia: 'Domingo', dire: 'home.tablero.versiculo.dom', ref: '#/versiculo/domingo'},
-      {dia: 'Lunes', dire: 'home.tablero.versiculo.lun', ref: '#/versiculo/lunes'},
-      {dia: 'Martes', dire: 'home.tablero.versiculo.mar', ref: '#/versiculo/martes'},
-      {dia: 'Miércoles', dire: 'home.tablero.versiculo.mie', ref: '#/versiculo/miercoles'},
-      {dia: 'Jueves', dire: 'home.tablero.versiculo.jue', ref: '#/versiculo/jueves'},
-      {dia: 'Viernes', dire: 'home.tablero.versiculo.vie', ref: '#/versiculo/viernes'},
-      {dia: 'Sábado', dire: 'home.tablero.versiculo.sab', ref: '#/versiculo/sabado'}
+      {id: 1, dia: 'Domingo', dire: 'home.tablero.versiculo.dom', ref: '#/versiculo/domingo'},
+      {id: 2, dia: 'Lunes', dire: 'home.tablero.versiculo.lun', ref: '#/versiculo/lunes'},
+      {id: 3, dia: 'Martes', dire: 'home.tablero.versiculo.mar', ref: '#/versiculo/martes'},
+      {id: 4, dia: 'Miércoles', dire: 'home.tablero.versiculo.mie', ref: '#/versiculo/miercoles'},
+      {id: 5, dia: 'Jueves', dire: 'home.tablero.versiculo.jue', ref: '#/versiculo/jueves'},
+      {id: 6, dia: 'Viernes', dire: 'home.tablero.versiculo.vie', ref: '#/versiculo/viernes'},
+      {id: 7, dia: 'Sábado', dire: 'home.tablero.versiculo.sab', ref: '#/versiculo/sabado'}
     ];
     $scope.weekdaysES = weekdayES;
 
     var weekdayEN = [
-      {dia: 'Sunday', dire: 'home.tablero.versiculo.dom', ref: '#/tablero/versiculo/domingo'},
-      {dia: 'Monday', dire: 'home.tablero.versiculo.lun', ref: '#/tablero/versiculo/lunes'},
-      {dia: 'Tuesday', dire: 'home.tablero.versiculo.mar', ref: '#/tablero/versiculo/martes'},
-      {dia: 'Wednesday', dire: 'home.tablero.versiculo.mie', ref: '#/tablero/versiculo/miercoles'},
-      {dia: 'Tursday', dire: 'home.tablero.versiculo.jue', ref: '#/tablero/versiculo/jueves'},
-      {dia: 'Friday', dire: 'home.tablero.versiculo.vie', ref: '#/tablero/versiculo/viernes'},
-      {dia: 'Saturday', dire: 'home.tablero.versiculo.sab', ref: '#/tablero/versiculo/sabado'}
+      {id: 1, dia: 'Sunday', dire: 'home.tablero.versiculo.dom', ref: '#/tablero/versiculo/domingo'},
+      {id: 2, dia: 'Monday', dire: 'home.tablero.versiculo.lun', ref: '#/tablero/versiculo/lunes'},
+      {id: 3, dia: 'Tuesday', dire: 'home.tablero.versiculo.mar', ref: '#/tablero/versiculo/martes'},
+      {id: 4, dia: 'Wednesday', dire: 'home.tablero.versiculo.mie', ref: '#/tablero/versiculo/miercoles'},
+      {id: 5, dia: 'Tursday', dire: 'home.tablero.versiculo.jue', ref: '#/tablero/versiculo/jueves'},
+      {id: 6, dia: 'Friday', dire: 'home.tablero.versiculo.vie', ref: '#/tablero/versiculo/viernes'},
+      {id: 7, dia: 'Saturday', dire: 'home.tablero.versiculo.sab', ref: '#/tablero/versiculo/sabado'}
     ];
     $scope.weekdaysEN = weekdayEN;
 
     var weekdayPT = [
-      {dia: 'Domingo', dire: 'home.tablero.versiculo.dom', ref: '#/tablero/versiculo/domingo'},
-      {dia: 'Segunda-feira', dire: 'home.tablero.versiculo.lun', ref: '#/tablero/versiculo/lunes'},
-      {dia: 'Terça-feira', dire: 'home.tablero.versiculo.mar', ref: '#/tablero/versiculo/martes'},
-      {dia: 'Quarta-feira', dire: 'home.tablero.versiculo.mie', ref: '#/tablero/versiculo/miercoles'},
-      {dia: 'Quinta-feira', dire: 'home.tablero.versiculo.jue', ref: '#/tablero/versiculo/jueves'},
-      {dia: 'Sexta-feira', dire: 'home.tablero.versiculo.vie', ref: '#/tablero/versiculo/viernes'},
-      {dia: 'Sábado', dire: 'home.tablero.versiculo.sab', ref: '#/tablero/versiculo/sabado'}
+      {id: 1, dia: 'Domingo', dire: 'home.tablero.versiculo.dom', ref: '#/tablero/versiculo/domingo'},
+      {id: 2, dia: 'Segunda-feira', dire: 'home.tablero.versiculo.lun', ref: '#/tablero/versiculo/lunes'},
+      {id: 3, dia: 'Terça-feira', dire: 'home.tablero.versiculo.mar', ref: '#/tablero/versiculo/martes'},
+      {id: 4, dia: 'Quarta-feira', dire: 'home.tablero.versiculo.mie', ref: '#/tablero/versiculo/miercoles'},
+      {id: 5, dia: 'Quinta-feira', dire: 'home.tablero.versiculo.jue', ref: '#/tablero/versiculo/jueves'},
+      {id: 6, dia: 'Sexta-feira', dire: 'home.tablero.versiculo.vie', ref: '#/tablero/versiculo/viernes'},
+      {id: 7, dia: 'Sábado', dire: 'home.tablero.versiculo.sab', ref: '#/tablero/versiculo/sabado'}
     ];
     $scope.weekdaysPT = weekdayPT;
 
